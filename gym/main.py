@@ -1,7 +1,9 @@
+from gym.db_utilities.setup import setup_db
+
+
 def main():
-    # initiate_db()
+    setup_db()
     # handle_arguments()
-    pass
 
 
 if __name__ == '__main__':
