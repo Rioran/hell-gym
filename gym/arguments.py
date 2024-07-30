@@ -1,7 +1,5 @@
 from argparse import ArgumentParser
 
-from db_utilities import prefill_database
-
 
 def parse_arguments():
     parser = ArgumentParser(
@@ -12,9 +10,3 @@ def parse_arguments():
     parser.add_argument('-p', '--prefill', action='store_true', help='Prefill the database.')
     arguments = parser.parse_args()
     return arguments
-
-
-def handle_arguments():
-    arguments = parse_arguments()
-    if arguments.prefill:
-        prefill_database()
