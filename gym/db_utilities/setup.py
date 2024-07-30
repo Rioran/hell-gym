@@ -1,5 +1,5 @@
-from gym.datamodel.model_base import SqlAlchemyBase
-from gym.db_utilities.session import GymSession
+from gym.datamodel import SqlAlchemyBase
+from .session import GymSession
 
 
 def setup_db():
