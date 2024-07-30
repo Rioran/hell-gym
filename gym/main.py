@@ -5,8 +5,8 @@ from .db_utilities import prefill_database, reset_db, setup_db
 def main():
     arguments = parse_arguments()
 
-    #if arguments.prefill:
-    #    reset_db()
+    if arguments.prefill:
+        reset_db()
 
     setup_db()
 
