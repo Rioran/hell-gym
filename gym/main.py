@@ -1,5 +1,6 @@
 from .arguments import parse_arguments
-from .db_utilities import prefill_database, reset_db, setup_db
+from .crud.trainer_crud import get_recent_trainers
+from .db_utilities import prefill_database, print_entries, reset_db, setup_db
 
 
 def main():
@@ -7,11 +8,13 @@ def main():
 
     if arguments.prefill:
         reset_db()
-
     setup_db()
-
     if arguments.prefill:
         prefill_database()
+
+    if arguments.trainers:
+        trainers = get_recent_trainers()
+        print_entries(trainers)
 
 
 if __name__ == '__main__':
