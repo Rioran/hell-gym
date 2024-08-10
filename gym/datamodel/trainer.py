@@ -12,7 +12,6 @@ class Trainer(SqlAlchemyBase):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(unique=True)
-    is_available: Mapped[bool] = mapped_column(default=False)
 
     bio: Mapped[Optional[str]]
     created: Mapped[datetime] = mapped_column(server_default=func.now())
@@ -20,4 +19,4 @@ class Trainer(SqlAlchemyBase):
     updates: Mapped['BookingUpdate'] = relationship(back_populates='trainer')
 
     def __repr__(self):
-        return f'<Trainer {self.id}: "{self.name}", available: {self.is_available}>'
+        return f'<Trainer {self.id}: "{self.name}">'

@@ -4,7 +4,7 @@ from .session import GymSession
 
 def prefill_database():
     with GymSession.get_session() as session:
-        trainer_a = Trainer(name='Gigachad', is_available=True)
+        trainer_a = Trainer(name='Gigachad')
         trainer_b = Trainer(name='Coach Potato')
         booking_a = Booking()
         booking_b = Booking(name='Mr. Fancy Pants')
