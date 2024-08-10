@@ -20,6 +20,12 @@ python -m gym.main --help
 python -m gym.main --prefill --trainers
 ```
 
+## terminal command register trainer
+!Caution: this command cannot be used with command "--prefill"!
+```bash
+python -m gym.main --register-trainer
+```
+
 ## TODO list
 
 - [ ] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
