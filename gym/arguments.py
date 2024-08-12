@@ -9,7 +9,7 @@ def parse_arguments():
     )
     parser.add_argument('-p', '--prefill', action='store_true', help='Prefill the database.')
     parser.add_argument('-t', '--trainers', action='store_true', help='See latest trainers.')
-    parser.add_argument('--ask-for-client', metavar='trainer_name', type=str,
+    parser.add_argument('-a', '--ask-for-client', metavar='trainer_name', type=str,
                         help='Add a client if there is one for a specific trainer')
     arguments = parser.parse_args()
     return arguments
