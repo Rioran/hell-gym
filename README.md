@@ -25,7 +25,7 @@ python -m gym.main --prefill --trainers
 - [ ] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
 - [ ] add crud function to add trainer to the database, Danya
 - [ ] add terminal command **--ask-for-client trainer_name**, Layla
-- [ ] add crud function to ask for a client: check if trainer is available / check if clients are available, Dima
+- [x] add crud function to ask for a client: check if trainer is available / check if clients are available, Dima
 - [ ] add terminal command **--finish-client trainer_name**, Gevorg
 - [ ] add crud function to change client status to finished
 - [ ] add terminal command **--new-booking** to add new client to the queue
