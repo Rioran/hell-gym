@@ -16,6 +16,5 @@ def main():
         trainers = get_recent_trainers()
         print_entries(trainers)
 
-
 if __name__ == '__main__':
     main()
