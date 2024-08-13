@@ -9,7 +9,7 @@ def parse_arguments():
     )
     parser.add_argument('-p', '--prefill', action='store_true', help='Prefill the database.')
     parser.add_argument('-t', '--trainers', action='store_true', help='See latest trainers.')
-    parser.add_argument('-nb', '--new-booking', action='store_true', help='Add new booking.')
+    parser.add_argument('-nb', '--new-booking', action='store', help='Add new booking, name must be specified.')
 
     arguments = parser.parse_args()
     return arguments
