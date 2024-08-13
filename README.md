@@ -20,13 +20,18 @@ python -m gym.main --help
 python -m gym.main --prefill --trainers
 ```
 
+## terminal command register trainer
+!Caution: this command cannot be used with command "--prefill"!
+```bash
+python -m gym.main --register-trainer
+```
+Usage: --register-trainer trainer_name ['trainer_bio']
 ## TODO list
-
-- [ ] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
+- [X] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
 - [X] add crud function to add trainer to the database, Danya
-- [ ] add terminal command **--ask-for-client trainer_name**, Layla
+- [X] add terminal command **--ask-for-client trainer_name**, Layla
 - [x] add crud function to ask for a client: check if trainer is available / check if clients are available, Dima
-- [ ] add terminal command **--finish-client trainer_name**, Gevorg
+- [x] add terminal command **--finish-client trainer_name**, Gevorg
 - [ ] add crud function to change client status to finished
 - [x] add terminal command **--new-booking** to add new client to the queue, Danya
 - [x] add crud function to add new booking, Danya
