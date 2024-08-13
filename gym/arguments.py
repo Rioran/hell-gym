@@ -7,7 +7,7 @@ def parse_arguments():
         description='Take a look at SQLAlchemy through the prism of a useless project!',
         epilog='Make a choice already!'
     )
-    # Add a mutually exclusive group to ensure --register-trainer and --prefill can't be used together
+    # Add a mutually exclusive group to ensure --register-trainer and --prefill cant be used together
     group = parser.add_mutually_exclusive_group()
 
     group.add_argument('-p', '--prefill', action='store_true', help='Prefill the database.')

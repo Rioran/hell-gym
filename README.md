@@ -26,7 +26,6 @@ python -m gym.main --prefill --trainers
 python -m gym.main --register-trainer
 ```
 Usage: --register-trainer trainer_name ['trainer_bio']
-
 ## TODO list
 
 - [X] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
