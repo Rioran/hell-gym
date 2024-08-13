@@ -20,12 +20,29 @@ python -m gym.main --help
 python -m gym.main --prefill --trainers
 ```
 
-## terminal command register trainer
-!Caution: this command cannot be used with command "--prefill"!
+## list last entries
+
 ```bash
-python -m gym.main --register-trainer
+python -m gym.main --trainers
 ```
-Usage: --register-trainer trainer_name ['trainer_bio']
+
+```bash
+python -m gym.main --bookings
+```
+
+## add entities
+Trainers:
+```bash
+python -m gym.main --register-trainer "Mister Bin" "Abused the Queen image for quite some time"
+```
+```bash
+python -m gym.main --register-trainer "Zena the Queen" "Во времена богов, воителей и королей простой народ искал защиты..."
+```
+Bookings:
+```bash
+python -m gym.main --new-booking "Alfred Enstien"
+```
+
 ## TODO list
 - [X] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
 - [X] add crud function to add trainer to the database, Danya
