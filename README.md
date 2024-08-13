@@ -30,7 +30,7 @@ Usage: --register-trainer trainer_name ['trainer_bio']
 - [X] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
 - [X] add crud function to add trainer to the database, Danya
 - [X] add terminal command **--ask-for-client trainer_name**, Layla
-- [ ] add crud function to ask for a client: check if trainer is available / check if clients are available, Dima
+- [x] add crud function to ask for a client: check if trainer is available / check if clients are available, Dima
 - [x] add terminal command **--finish-client trainer_name**, Gevorg
 - [ ] add crud function to change client status to finished
 - [x] add terminal command **--new-booking** to add new client to the queue, Danya
