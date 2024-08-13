@@ -9,6 +9,7 @@ def parse_arguments():
     )
     parser.add_argument('-t', '--trainers', action='store_true', help='See latest trainers.')
     parser.add_argument('-b', '--bookings', action='store_true', help='See latest bookings.')
+    parser.add_argument('-u', '--updates', action='store_true', help='See latest booking updates.')
     
     group = parser.add_mutually_exclusive_group()
 

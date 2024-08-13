@@ -1,6 +1,6 @@
 from .arguments import parse_arguments
 from .crud import add_new_booking, add_new_trainer, get_recent_entries
-from .datamodel import Booking, Trainer
+from .datamodel import Booking, BookingUpdate, Trainer
 from .db_utilities import prefill_database, print_entries, reset_db, setup_db
 
 
@@ -31,6 +31,10 @@ def main():
     if arguments.bookings:
         bookings = get_recent_entries(Booking)
         print_entries(bookings)
+
+    if arguments.updates:
+        updates = get_recent_entries(BookingUpdate)
+        print_entries(updates)
 
 
 if __name__ == '__main__':

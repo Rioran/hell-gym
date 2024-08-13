@@ -30,6 +30,10 @@ python -m gym.main --trainers
 python -m gym.main --bookings
 ```
 
+```bash
+python -m gym.main --updates
+```
+
 ## add entities
 Trainers:
 ```bash

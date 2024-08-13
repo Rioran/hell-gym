@@ -22,4 +22,4 @@ class BookingUpdate(SqlAlchemyBase):
     created: Mapped[datetime] = mapped_column(server_default=func.now())
 
     def __repr__(self):
-        return f'<Booking update {self.id}: {self.booking.name} {self.status} with {self.trainer.name}>'
+        return f'<Booking update {self.id}: client {self.booking_id} {self.status} with {self.trainer_id}>'
