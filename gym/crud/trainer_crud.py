@@ -10,3 +10,12 @@ def get_recent_trainers(limit=PRINT_ITEMS_PER_PAGE, offset=0):
             query = query.limit(limit).offset(offset)
         data = query.all()
     return data
+
+
+def add_new_trainer(trainer_name, trainer_bio='Not filled'):
+    with GymSession.get_session() as session:
+        name = Trainer(name=trainer_name)
+        bio = Trainer(bio=trainer_bio)
+        all_items = [name, bio]
+        session.add_all(all_items)
+        session.commit()
