@@ -1,22 +1,39 @@
 from .arguments import parse_arguments
-from .crud import add_new_booking, add_new_trainer, get_recent_entries
-from .datamodel import Booking, BookingUpdate, Trainer
-from .db_utilities import prefill_database, print_entries, reset_db, setup_db
+from .crud import (
+    add_new_booking,
+    add_new_trainer,
+    get_recent_entries,
+    make_booking_finished,
+)
+from .datamodel import (
+    Booking,
+    BookingUpdate,
+    Trainer,
+)
+from .db_utilities import (
+    prefill_database,
+    print_entries,
+    reset_db,
+    setup_db,
+)
 
 
 def main():
     arguments = parse_arguments()
-    print(f'\n{arguments = }')
-    print(f'{arguments.register_trainer = }')
-    for item in dir(arguments):
-        if item[0] != '_':
-            print(f'\t{item}')
+    # print(f'\n{arguments = }')
+    # print(f'{arguments.register_trainer = }')
+    # for item in dir(arguments):
+    #     if item[0] != '_':
+    #         print(f'\t{item}')
 
     if arguments.prefill:
         reset_db()
     setup_db()
     if arguments.prefill:
         prefill_database()
+
+    if arguments.finish_client:
+        make_booking_finished(arguments.finish_client)
 
     if arguments.register_trainer:
         add_new_trainer(*arguments.register_trainer)

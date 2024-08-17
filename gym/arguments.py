@@ -20,7 +20,11 @@ def parse_arguments():
         metavar=('trainer_name', 'trainer_bio'),
         help='Register a new trainer with optional bio.'
     )
-    group.add_argument('-fc', '--finish-client', metavar='trainer_name', help='Finish client for a specified trainer.')
+    group.add_argument(
+        '-fc', '--finish-client',
+        metavar='client_name',
+        help='Add status "finished" to specified client if possible.'
+    )
     group.add_argument(
         '-a', '--ask-for-client',
         metavar='trainer_name',

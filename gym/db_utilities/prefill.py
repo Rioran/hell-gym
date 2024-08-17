@@ -12,11 +12,11 @@ def prefill_database():
         session.add(trainer_b)
         session.commit()
 
-        booking_a = Booking()
+        booking_a = Booking(name='Mr. Fancy Pants')
         session.add(booking_a)
         session.commit()
 
-        booking_b = Booking(name='Mr. Fancy Pants')
+        booking_b = Booking()
         session.add(booking_b)
         session.commit()
 

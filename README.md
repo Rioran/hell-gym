@@ -47,12 +47,22 @@ Bookings:
 python -m gym.main --new-booking "Alfred Enstien"
 ```
 
+## changes
+Must work on prefill data:
+```bash
+python -m gym.main --finish-client "Mr. Fancy Pants"
+```
+Must not work on prefill data:
+```bash
+python -m gym.main --finish-client "Mr. Incognito"
+```
+
 ## TODO list
-- [X] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
-- [X] add crud function to add trainer to the database, Danya
-- [X] add terminal command **--ask-for-client trainer_name**, Layla
+- [x] add terminal command **--register-trainer trainer_name [trainer_bio]**, Gosh
+- [x] add crud function to add trainer to the database, Danya
+- [x] add terminal command **--ask-for-client trainer_name**, Layla
 - [x] add crud function to ask for a client: check if trainer is available / check if clients are available, Dima
 - [x] add terminal command **--finish-client trainer_name**, Gevorg
-- [ ] add crud function to change client status to finished
+- [x] add crud function to change client status to finished
 - [x] add terminal command **--new-booking** to add new client to the queue, Danya
 - [x] add crud function to add new booking, Danya
